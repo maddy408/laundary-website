@@ -1,0 +1,148 @@
+.womencardimg1 {
+    width: 300px;
+    margin-top: 60px;
+    margin-left: 200px;
+    height: 300px;
+}
+
+.flex {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add spacing between image and text */
+}
+
+.contentof {
+    margin-top: -20px;
+    text-align: left; /* Ensure text aligns to the left */
+    margin-left: 60px; /* Remove extreme negative margin */
+    width: 40%;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    margin-left: -560px;
+    background-color: #facc15;
+    margin-top: 200px;
+    gap: 8px; /* Space between elements */
+  }
+  
+  .counter-button {
+    background-color: #facc15; /* Yellow */
+    color: black;
+    border: none;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .counter-button.left {
+    border-radius: 8px 0 0 8px; /* Rounded left */
+  }
+  
+  .counter-button.right {
+    border-radius: 0 8px 8px 0; /* Rounded right */
+  }
+  
+  .counter-button:hover {
+    background-color: #eab308; /* Darker yellow on hover */
+  }
+  
+  .counter-value {
+    padding: 10px 20px;
+    border: 1px solid #d1d5db; /* Gray border */
+    font-size: 18px;
+    font-weight: bold;
+    color: #374151; /* Dark gray */
+    background-color: #facc15; /* Light gray */
+  }
+  
+
+/* Desktop view remains unchanged */
+
+/* Tablet View (768px - 1069px) */
+@media (max-width: 1069px) {
+  .flex {
+      flex-wrap: wrap; /* Ensure content doesn't overflow */
+      justify-content: center; /* Center content */
+  }
+
+  .womencardimg1 {
+      width: 280px; /* Slightly smaller for better fit */
+      height: 280px;
+      margin-left: 100px; /* Adjusted for tablet */
+  }
+
+  .contentof {
+      width: 50%; /* Keeps text width balanced */
+      margin-left: 50px; /* Adjusted for tablet */
+  }
+
+  .counter-container {
+      display: flex;
+      height: 40px;
+      align-items: center;
+      justify-content: center; /* Center the counter */
+      margin-left: 490px; /* Fix alignment */
+      margin-top: -155px; /* Adjust spacing */
+  }
+.counter-value{
+  height: 40px;
+}
+  .btn-container {
+      display: flex;
+      align-items: center;
+      margin-left: 100px !important;
+      justify-content: center;
+      margin-top: 20px;
+  }
+
+  .womenbtn {
+      text-align: center !important;
+      margin:  auto !important; /* Center align */
+      /* margin-left: 600px !important; */
+      margin-top: -100px !important;
+      display: flex;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .flex {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
+  .womencardimg1 {
+      width: 200px;
+      height: 200px;
+      margin-left: 0;
+  }
+
+  .contentof {
+      width: 70%; /* Full width */
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .counter-container {
+    height: 40px;
+      flex-direction: row;
+      gap: -40px !important;
+      margin-left: -150px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px; /* Reduce excessive margin */
+  }
+ .counter-value{
+  height: 40px;
+ }
+  .womenbtn{
+    margin-top: -60px !important;
+    gap: 80px !important;
+    margin-left: 250px !important;
+  }
+}

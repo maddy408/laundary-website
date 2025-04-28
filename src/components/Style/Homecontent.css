@@ -1,0 +1,255 @@
+ .carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+  align-items: center;
+  
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease-in-out;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide-image {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.carousel-slide:first-child .slide-text {
+  background: none;
+  color: black;
+}
+
+.slide-image {
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+}
+
+.small-image {
+  width: 700px;
+  height: 500px;
+  margin-top: 50px;
+  margin-left: 500px;
+}
+
+.full-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-text {
+  position: relative;
+  text-align: start;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  color: white;
+}
+
+.slide-text h1 {
+  font-size: 40px;
+  margin-top: 90px;
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+
+.slide-text p {
+  font-size: 16px;
+  margin-left: 100px;
+}
+
+.cta-button {
+  margin-left: 100px;
+  background-color: orange;
+  color: black;
+  padding: 12px 24px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*  GLOBAL CSS (outside any media query) */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+@media (min-width: 370px) and (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .carousel-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .carousel-wrapper {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+  }
+  .carousel-slide {
+    flex-direction: column;
+    justify-content: center;
+ 
+  }
+  .slide-text {
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+  }
+
+  .slide-text h1 {
+    font-size: 16px !important;
+    margin: 40px 0 10px 0 !important;
+  }
+
+  .slide-text p {
+    font-size: 12px !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .cta-button {
+    font-size: 14px !important;
+    padding: 10px 20px !important;
+    margin: 20px auto 0 auto !important;
+    display: block !important;
+    max-width: 90%;
+  }
+
+  .small-image {
+    width: 70% !important;
+    justify-content: center;
+    align-content: center;
+    height: 40% !important;
+    margin-top: 200px !important;
+    margin-left: -10px !important;
+    margin: 130px auto 0 auto;
+   
+  }
+}
+
+
+
+/* Medium (MD) - Tablets */
+@media (min-width:768px) and (max-width: 1023px) {
+  .carousel-container {
+    height: 85vh;
+
+  }
+  .carousel-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-slide {
+    flex-direction: row; /* Show text and image side-by-side */
+    justify-content: space-between;
+ 
+  }
+  .slide-text {
+    padding: 20px;
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    height: auto;
+  }
+
+  .slide-text h1 {
+    font-size: 28px;
+  }
+
+  .slide-text p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+
+  .small-image {
+    width: 60%;
+    margin-left: 400px;
+    display: block;
+    margin-top: 110px;
+    height: 450px;
+    margin-right: auto;
+  }
+}
+

@@ -1,0 +1,81 @@
+.pricingdiv{
+    margin-top: 50px;
+}
+.h8div{
+    text-align: center;
+    }
+    .h9div{
+        text-align: center;
+    }
+
+   .linkable {
+    margin-left: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    gap: 90px; 
+    text-align: center;
+}
+
+.linkable a {
+    color: grey;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.linkable a.active {
+    text-decoration: underline;
+    color: rgb(8, 7, 7);
+    font-weight: bold;
+}
+.tableof{
+   margin-top: 30px;
+    width:'50%' ;
+    margin-left: 20px;
+     padding: 10px;
+}
+@media(max-width:1069px){
+    .linkable{
+        text-align: center;
+        margin-left: 175px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .pricingdiv {
+        margin-top: 30px;
+    }
+
+    .h8div  {
+        text-align: center;
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    .linkable {
+        flex-direction: row; 
+        gap: 15px;
+        text-align: center;
+        margin-left: 9px; 
+        font-size: 20px;
+    }
+
+    .tableof {
+        width: 100% !important; 
+        margin-left: 0 !important;
+        padding: 5px;
+        overflow-x: auto;
+    }
+
+    .tableof table {
+        width: 100%; 
+        font-size: 14px;
+    }
+
+    .tableof th, .tableof td {
+        padding: 8px;
+        white-space: nowrap;
+    }
+}

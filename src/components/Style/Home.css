@@ -1,0 +1,45 @@
+.main{
+    padding:20;
+
+}
+.child{
+    
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    
+}
+
+
+.img{
+    display: flex;
+    float: left;
+    margin-left: 550px;
+    margin-top: -290px;
+    justify-content: space-between;
+
+}
+.header1{
+    margin-left: 100px;
+    font-weight: bold;
+    font-size: 50px;
+}
+.subhead{
+    margin-top: -10px;
+    margin-left: -600px;
+    font-weight: lighter;
+}
+.button{
+    font-size: medium;
+    background-color: orange;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    margin-left: 70px;
+    
+}
+.homeimg{
+    width: 802px;
+    display: flex;
+    height: 567px;
+}

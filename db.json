@@ -1,0 +1,19 @@
+{
+    "posts":[{
+        "id":1,"sex":"WOMEN","text":"Lorem Ipsum is simply"
+    },{
+        "id":2,"sex":"MEN","text":"Lorem Ipsum is simply"
+    },{
+        "id":3,"sex":"KIDS","text":"Lorem Ipsum is simply"
+    },{
+        "id":4,"sex":"BEDSHEET","text":"Lorem Ipsum is simply"
+    },{
+        "id":5,"sex":"CURTAINS","text":"Lorem Ipsumis simply"
+    },{
+        "id":6,"sex":"SHOES","text":"Lorem Ipsum is simply"
+    },{
+        "id":7,"sex":"LOREM","text":"Lorem Ipsum is simply "
+    },{
+        "id":8,"sex":"LOREM","text":"Lorem Ipsum is simply"
+    }]
+}

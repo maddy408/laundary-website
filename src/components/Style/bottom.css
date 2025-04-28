@@ -1,0 +1,370 @@
+.logo{
+    width: 93px;
+    height: 91px;
+    margin-top: 60px;
+    margin-left: 182px;
+}
+.para{
+    margin-left: 100px;
+    text-align: start;
+    font-weight: normal;
+}
+.maindiv1{
+    float: left;
+    margin-top: 20px;
+    width: 100%;
+}
+.divone{
+    float: left;
+    margin-top: -270px;
+    margin-left: 500px;
+    }
+.ulof {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 120px; 
+    margin-left: -40px;
+    justify-content: space-between;
+   
+}
+.divtwo{
+    float: left;
+    margin-top: -270px;
+    margin-left: 100px;  
+}
+.ulof1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    color: black;
+    margin-left: -40px;
+    justify-content: space-between;
+      
+}
+a{
+    color: black;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+ul li{
+    color: black;
+}
+.divthree{
+    float: left;
+    margin-top: -375px;
+    margin-left: 950px;  
+}
+.icondiv{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    margin-left: 0px;
+    gap:10px;
+}
+
+.finaldiv {
+    position: relative; 
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 65px; 
+}
+
+.leftside {
+    position: absolute;
+    font-weight: normal;
+    left: -860px; 
+    bottom: 0; 
+    
+}
+
+.rightside {
+    position: absolute;
+    font-weight: normal;
+    right: -20px !important;
+    bottom: 0; 
+    
+}
+
+
+
+
+
+/* Mobile View */
+@media (max-width: 767px) {
+    .bottomdiv {
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+        margin: 40px 0px 0px 0px !important;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .para {
+        font-size: 14px;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .maindiv1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .divone, .divtwo, .divthree {
+        float: none;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .ulof, .ulof1 {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .divthree h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .icondiv {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .finaldiv {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .leftside, .rightside {
+        position: relative;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .leftside {
+        margin-top: 10px;
+    }
+
+    .rightside {
+        margin-top: 10px;
+    }
+
+    .para {
+        text-align: center;
+    }
+}
+
+/* Tablet View */
+/* Tablet View */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .bottomdiv {
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .logo {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+
+    .para {
+        font-size: 16px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .maindiv1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .divone, .divtwo, .divthree {
+        float: none;
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .ulof, .ulof1 {
+        margin-left: 0;
+        margin-bottom: 30px;
+        padding-left: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .divthree h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .icondiv {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .finaldiv {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .leftside, .rightside {
+        position: relative;
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .leftside {
+        margin-top: 10px;
+    }
+
+    .rightside {
+        margin-top: 10px;
+    }
+
+    .para {
+        text-align: center;
+    }
+}
+/* Default screen view (1024px to 1200px) */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .logo {
+        width: 85px;
+        height: 85px;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+
+    .para {
+        font-size: 16px;
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    .maindiv1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 60px;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+.divone,.divtwo{
+    margin-top: -310px !important;
+    margin-left: 10px !important;
+}
+    .divone,
+    .divtwo,
+    .divthree {
+        margin-top: 0;
+        float: none;
+        margin-left: 0;
+        text-align: center;
+    }
+.divthree{
+    margin-left: 700px;
+    margin-top: -370px;
+}
+    .ulof,
+    .ulof1 {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: 0;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-left: 0;
+    }
+
+    .icondiv {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .finaldiv {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 60px;
+        padding: 20px 40px;
+    }
+
+    .leftside,
+    .rightside {
+        display: flex;
+        flex-direction: row;
+       
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .leftside {
+       
+        justify-content: center;
+        width: 150%;
+        margin-left: 160px;
+       
+    }
+
+    .rightside {
+        text-align: right;
+    }
+}

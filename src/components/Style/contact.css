@@ -1,0 +1,103 @@
+/* Centered header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for all contact cards */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* General styling for contact cards */
+.contact-box {
+  width: 280px;
+  height: 280px;
+  border-radius: 5px;
+  background-color: navy;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  text-align: start;
+  color: white;
+  padding: 20px;
+}
+
+/* Icon styling */
+.icon {
+  color: white;
+  font-size: 60px !important;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Orange box styling */
+.orange-box {
+  background-color: orange;
+}
+
+/* Black text and icon for orange box */
+.orange-box .black-text {
+  color: black;
+}
+
+.orange-box .black-icon {
+  color: black;
+}
+
+/* Tablet view: 2 cards per row */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .contact-container {
+    justify-content: center !important;
+  }
+
+  .contact-box {
+    flex: 0 0 calc(50% - 30px) !important;
+    max-width: calc(50% - 30px) !important;
+    height: 250px !important;
+    padding: 15px !important;
+  }
+
+  .icon {
+    font-size: 50px !important;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+}
+
+/* Mobile view: 1 card per row */
+@media (max-width: 767px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-box {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .icon {
+    font-size: 40px !important;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+}
+/* Medium desktop view: 4 cards per row */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .contact-container {
+    justify-content: center !important;
+  }
+
+  .contact-box {
+    flex: 0 0 calc(25% - 30px) !important;
+    max-width: calc(25% - 30px) !important;
+  }
+}

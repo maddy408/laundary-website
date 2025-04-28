@@ -1,0 +1,46 @@
+
+.imgdiv{
+    margin-top: 0px;
+}
+.homeservice {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: -900px; 
+}
+
+.ourservice2 {
+    font-size: 50px;
+    color: white;
+    margin-left: -780px;
+    margin-top: -15px;
+}
+
+/* Tablet View: Max-width 768px */
+@media (max-width: 1023px) {
+    .homeservice {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .ourservice2 {
+        font-size: 35px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Mobile View: Max-width 480px */
+@media (max-width: 767px) {
+    .homeservice {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .ourservice2 {
+        font-size: 25px !important;
+        margin-left: 0;
+        text-align: center;
+    }
+}
